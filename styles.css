@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: background-color: hsl(0, 0%, 98%);
   color: hsl(229, 6%, 66%);
   font-size: 15px;
   font-weight: 400;
@@ -45,7 +46,7 @@ span{
   position: relative;
   margin-bottom: 30px;
   border-radius: 7px;
-  box-shadow: 0 5px 18px hsl(234, 12%, 60%);
+  box-shadow: 0 1px 25px -3px hsl(200, 12%, 60%);
   width: 325px;
   height: 250px;
 }
@@ -107,14 +108,24 @@ span{
 
 
   .hero-text{
+    max-width: 545px;
     font-size: 16px;
     padding: 0 35px;
 
   }
 
+  .card-container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .card{
     width: 400px;
     height: 265px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .card p{
@@ -123,32 +134,7 @@ span{
 
 }
 
-@media only screen and (min-width: 900px){
-
-
-  .card-container{
-    margin: auto;
-    margin: 0 15%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .hero-text{
-    max-width: 545px;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  .card{
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-
-}
-
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1285px){
 
   .super{
     position: relative;
