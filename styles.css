@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,31 +18,31 @@ body{
   margin: 50px auto;
 }
 
-.hero-header{
+.hero-header {
   font-size: 1.6rem;
   font-weight: 200;
 }
 
-span{
+span {
   font-weight: 600;
   color: hsl(234, 12%, 34%);
 }
 
-.hero-text{
+.hero-text {
   max-width: 545px;
   font-size: 15px;
   padding: 0 85px;
   line-height: 1.6;
 }
 
-.card-container{
+.card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.card{
+.card {
   position: relative;
   margin-bottom: 30px;
   border-radius: 7px;
@@ -51,114 +51,111 @@ span{
   height: 250px;
 }
 
-.card h2, .card p{
+.card h2, .card p {
   margin-left: 25px;
 }
 
-.card h2{
+.card h2 {
   color: hsl(234, 12%, 34%);
   margin-top: 25px;
   margin-bottom: 5px;
 }
 
-.card p{
+.card p {
   margin-top: 0;
   margin-right: 10px;
   font-size: 14px;
   line-height: 2;
 }
 
-.card-icon{
+.card-icon {
   position: absolute;
   bottom: 30px;
   right: 30px;
 }
 
-.super{
+.super {
   border-top: 5px solid hsl(180, 62%, 55%);
 }
 
-.team{
+.team {
   border-top: 5px solid hsl(0, 78%, 62%);
 }
 
-.karma{
+.karma {
   border-top: 5px solid hsl(34, 97%, 64%);
 }
 
-.calculator{
+.calculator {
   border-top: 5px solid hsl(212, 86%, 64%);
 }
 
-.attribution{
+.attribution {
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a{
+.attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 800px){
-
-  .hero-header{
+@media only screen and (min-width: 800px) {
+  .hero-header {
     font-size: 2.5rem;
     font-weight: 200;
   }
 
-
-  .hero-text{
+  .hero-text {
     max-width: 545px;
     font-size: 16px;
     padding: 0 35px;
-
   }
 
-  .card-container{
+  .card-container {
     margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .card{
+  .card {
     width: 400px;
     height: 265px;
     margin-left: 15px;
     margin-right: 15px;
   }
 
-  .card p{
+  .card p {
     font-size: 16px;
   }
-
 }
 
-@media only screen and (min-width: 1285px){
-
-  .super{
+@media only screen and (min-width: 1285px) {
+  .super {
     position: relative;
     top: 50%;
     grid-area: super;
   }
-  .team{
+
+  .team {
     grid-area: team;
     margin-bottom: 30px;
   }
-  .calculator{
+
+  .calculator {
     position: relative;
     top: 50%;
     grid-area: calculator;
   }
-  .karma{
+
+  .karma {
     grid-area: karma;
   }
 
-  .card-container{
+  .card-container {
     display: grid;
     grid-template-areas: "super team calculator"
-                          ". karma .";
+      ". karma .";
     margin-bottom: 35px;
   }
-
 }
